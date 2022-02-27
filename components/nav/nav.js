@@ -71,9 +71,8 @@ export default function Example() {
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                             {nav.subNav.map((item) => (
-                              <Link href={item.href}>
+                              <Link href={item.href} key={item.name}>
                                 <a
-                                    key={item.name}
                                     className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                                 >
                                     <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
@@ -99,10 +98,10 @@ export default function Example() {
             //         {nav.name}
             //     </a>
             //   </Link>
-              <CustomLink link={nav}>
-                  <a className="text-base font-medium text-gray-500 hover:text-gray-900" key={nav.name}>
-                    {nav.name}
-                </a>
+              <CustomLink link={nav} key={nav.name}>
+                  {/* <a className="text-base font-medium text-gray-500 hover:text-gray-900"> */}
+                    {/* {nav.name} */}
+                {/* </a> */}
               </CustomLink>
             ))
           }

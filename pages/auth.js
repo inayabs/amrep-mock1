@@ -1,6 +1,6 @@
 import { LockClosedIcon } from '@heroicons/react/solid'
 import Layout from '../components/layouts/landing'
-
+import Image from 'next/image'
 export default function Auth() {
   return (
     <Layout>
@@ -11,7 +11,17 @@ export default function Auth() {
                 className="mx-auto h-12 w-auto"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                 alt="Workflow"
+                width="100%" height="100%" layout="responsive" 
               />
+              {/* <div style={{position:'relative'}}>
+                <Image
+                    className="mx-auto h-12 w-auto"
+                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    alt="Workflow"
+                    objectFit="contain"
+                    layout="fill"
+                /> */}
+              {/* </div> */}
               <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
               <p className="mt-2 text-center text-sm text-gray-600">
                 Or{' '}

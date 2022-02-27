@@ -3,7 +3,7 @@ import Footer from "../footer/footer"
 export default function Layout({children}) {
   return (
     <div className="relative bg-white overflow-hidden">
-      <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+      <div className="relative  pb-16 sm:pb-24 lg:pb-32">
         <Nav></Nav>
         <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-10">
             {!children?index():children}
