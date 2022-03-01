@@ -3,7 +3,6 @@ import Layout from '../components/layouts/landing'
 import Image from 'next/image'
 export default function Auth() {
   return (
-    <Layout>
         <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-md w-full space-y-8">
             <div>
@@ -96,7 +95,6 @@ export default function Auth() {
               </div>
             </form>
           </div>
-        </div>  
-    </Layout>
+        </div>
   )
 }

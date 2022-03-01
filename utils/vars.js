@@ -9,19 +9,19 @@ export const navLinks = {
                     name: 'Photo Editing',
                     description: 'See prices of photo editing.',
                     href: '/services/photo-editing',
-                    icon: 'ChartBarIcon',
+                    icon: heroIcons['PhotographIcon'],
                   },
                   {
                     name: 'Video Editing',
                     description: 'See prices of video editing.',
                     href: '/services/video-editing',
-                    icon: 'CursorClickIcon',
+                    icon: heroIcons['VideoCameraIcon'],
                   },
                   {
                     name: 'Twilight Editing',
                     description: "See prices of twilight editing.",
                     href: '/services/twilight-editing',
-                    icon: heroIcons['ViewGridIcon'],
+                    icon: heroIcons['VideoCameraIcon'],
                   },
             ]
         },
@@ -32,19 +32,19 @@ export const navLinks = {
                     name: 'About Us',
                     description: "About the Company.",
                     href: '/company/about-us',
-                    icon: heroIcons['ViewGridIcon'],
+                    icon: heroIcons['UserGroupIcon'],
                 },
                 {
                     name: 'Our Team',
                     description: "Meet the Team.",
                     href: '/company/our-team',
-                    icon: 'ViewGridIcon',
+                    icon: heroIcons['UserGroupIcon'],
                 },
                 {
                     name: 'Contact',
                     description: "Contact Us",
                     href: '/company/contact',
-                    icon: heroIcons['ViewGridIcon'],
+                    icon: heroIcons['MailIcon'],
                 },
             ]
         },
@@ -53,21 +53,9 @@ export const navLinks = {
             href: '/showcase'
         },
         {
-            name: 'Booking',
-            subNav: [
-                {
-                    name: 'Packages',
-                    description: "See Packages",
-                    href: '/booking/packages',
-                    icon: heroIcons['ViewGridIcon'],
-                },
-                {
-                    name: 'Free Trial',
-                    description: "1 week free trial!",
-                    href: '/booking/free-trial',
-                    icon: heroIcons['ViewGridIcon'],
-                },
-            ]
+            name: 'Packages',
+            description: "See Packages",
+            href: '/packages'
         }
     ],
     user:{

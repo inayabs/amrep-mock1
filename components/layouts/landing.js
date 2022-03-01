@@ -5,7 +5,7 @@ export default function Layout({children}) {
     <div className="relative bg-white overflow-hidden">
       <div className="relative  pb-16 sm:pb-24 lg:pb-32">
         <Nav></Nav>
-        <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-10">
+        <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-10 min-h-screen" >
             {!children?index():children}
         </main>
       </div>
@@ -20,17 +20,14 @@ const index = () => {
     <div className="lg:grid lg:grid-cols-12 lg:gap-8">
         <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
           <h1>
-            <span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-              Coming soon
-            </span>
+            
             <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-              <span className="block text-gray-900">Data to enrich your</span>
-              <span className="block text-indigo-600">online business</span>
+              <span className="block text-gray-900">Real Estate Photo Post Processing</span>
+              <span className="block text-indigo-600">Based in Virginia Beach, VA</span>
             </span>
           </h1>
           <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.
+            New clients enjoy 1 Week of Free Processing as a trial before you commit!
           </p>
           <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
             <p className="text-base font-medium text-gray-900">Sign up to get notified when it’s ready.</p>
