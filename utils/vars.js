@@ -48,10 +48,10 @@ export const navLinks = {
                 },
             ]
         },
-        {
-            name: 'Showcase',
-            href: '/showcase'
-        },
+        // {
+        //     name: 'Showcase',
+        //     href: '/showcase'
+        // },
         {
             name: 'Packages',
             description: "See Packages",
