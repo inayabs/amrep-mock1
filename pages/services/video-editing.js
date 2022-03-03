@@ -7,21 +7,21 @@ const files = [
         title: 'Standard “Walkthrough” Edit - $5',
         size: '3.9 MB',
         source:
-          'https://www.youtube.com/watch?v=V7z7BAZdt2M',
+          'https://player.vimeo.com/video/641919142?h=d7ea6014f7&app_id=122963',
       },
       {
         id:2,
         title: 'Advanced “Cinematic” Edit - $50',
         size: '3.9 MB',
         source:
-          'https://www.youtube.com/watch?v=AKXwJbZ7kXQ',
+          'https://player.vimeo.com/video/537325941?h=d1c4854e66&app_id=122963',
       },
       {
         id:3,
         title: 'Highlight Reel Edit - $25',
         size: '3.9 MB',
         source:
-          'https://www.youtube.com/watch?v=W_8aNl2PcOQ',
+          'https://player.vimeo.com/video/537317894?h=712e02bd53&app_id=122963',
       },
     // More files...
   ]
@@ -41,9 +41,9 @@ const VideoEditing = () => {
                     {files.map((file) => (
                         <li key={file.id} className="relative">
                         <p className="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none">{file.title}</p>
-                        <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
-                            <ReactPlayer url={file.source} width={'relative'}/>
-                        </div>
+                        {/* <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden"> */}
+                            <ReactPlayer url={file.source} width={'relative'} controls/>
+                        {/* </div> */}
                         {/* <p className="block text-sm font-medium text-gray-500 pointer-events-none">{file.size}</p> */}
                         </li>
                     ))}

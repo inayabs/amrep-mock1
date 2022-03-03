@@ -68,7 +68,7 @@ const Packages = () => {
                             <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
                             <a
                             href={tier.href}
-                            className="mt-6 block border border-gray-800 rounded-md bg-gray-800 w-full py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                            className="mt-6 block border border-gray-800 rounded-md bg-indigo-800 w-full py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
                             >
                             Buy {tier.name}
                             </a>

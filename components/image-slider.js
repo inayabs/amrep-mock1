@@ -27,7 +27,7 @@ const ImageSlider = ({file}) => {
         <div className="relative" ref={imageContainer} >
             <img src={file.source} alt="" className="object-cover pointer-events-none group-hover:opacity-75" />
                 <img src={file.source} alt="" className="object-cover pointer-events-none group-hover:opacity-75" 
-                style={{filter:'grayscale(100%)', clipPath: `polygon(0 0, ${imageRevealFraq * 100}% 0, ${imageRevealFraq * 100}% 100%, 0 100%)`}} 
+                style={{filter:file.filter, clipPath: `polygon(0 0, ${imageRevealFraq * 100}% 0, ${imageRevealFraq * 100}% 100%, 0 100%)`}} 
                 className="absolute inset-0"/>
 
                 <div style={{left: `${imageRevealFraq * 100}%`}} className="absolute inset-y-0">
