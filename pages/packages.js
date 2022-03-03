@@ -54,7 +54,7 @@ const Packages = () => {
     return (
         <Layout>
             <div className="bg-white">
-                <div className="max-w-7xl mx-auto bg-white py-16 sm:py-24 sm:px-6 lg:px-8">
+                <div className="mx-auto bg-white py-16 sm:py-24">
                     {/* xs to lg */}
                     <div className="max-w-2xl mx-auto space-y-16 lg:hidden">
                     {tiers.map((tier, tierIdx) => (
@@ -169,7 +169,7 @@ const Packages = () => {
                                 <p className="mt-4 mb-16 text-sm text-gray-500">{tier.description}</p>
                                 <a
                                     href={tier.href}
-                                    className="absolute bottom-0 flex-grow block w-full bg-gray-800 border border-gray-800 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                                    className="absolute bottom-0 flex-grow block w-full bg-indigo-800 border border-gray-800 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-indigo-900"
                                 >
                                     Buy {tier.name}
                                 </a>
@@ -226,7 +226,7 @@ const Packages = () => {
                             <td key={tier.name} className="pt-5 px-6">
                                 <a
                                 href={tier.href}
-                                className="block w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900"
+                                className="block w-full bg-indigo-800 border border-indigo-800 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-900"
                                 >
                                 Buy {tier.name}
                                 </a>

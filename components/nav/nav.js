@@ -26,17 +26,19 @@ function classNames(...classes) {
 // ]
 export default function Example() {
   return (
-    <Popover className="relative bg-white">
-      <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+    <Popover className="relative bg-white border-b-2 border-gray-100">
+      <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10  mx-auto max-w-7xl">
         <div>
-          <a href="#" className="flex">
-            <span className="sr-only">Workflow</span>
-            <img
-              className="h-8 w-auto sm:h-10"
-              src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-              alt=""
-            />
-          </a>
+          <Link href="/" className="flex">
+            <a>
+              <span className="sr-only">Workflow</span>
+              <img
+                className="h-8 w-auto sm:h-10 lg:h-10"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+            </a>
+          </Link>
         </div>
         <div className="-mr-2 -my-2 md:hidden">
           <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -45,6 +47,7 @@ export default function Example() {
           </Popover.Button>
         </div>
         <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
+          
         <Popover.Group as="nav" className="flex space-x-10">
           {
             navigation.map((nav)=>(

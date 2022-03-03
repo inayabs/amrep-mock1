@@ -1,5 +1,6 @@
 import Nav from "../nav/nav"
 import Footer from "../footer/footer"
+
 export default function Layout({children}) {
   return (
     <div className="relative bg-white overflow-hidden">

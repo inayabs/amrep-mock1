@@ -5,11 +5,20 @@ const ImageSlider = ({file}) => {
     const imageContainer = useRef(undefined);
 
     const slide = (xPosition) =>{
-        const containerBoundingRect = imageContainer.current.getBoundingClientRect();
+        const containerBoundingRect =
+        imageContainer.current.getBoundingClientRect();
 
-        setImageRevealFraq(()=>{
-            return (xPosition - containerBoundingRect.left) / containerBoundingRect.width
-        })
+        setImageRevealFraq(() => {
+        if (xPosition < containerBoundingRect.left) {
+            return 0;
+        } else if (xPosition > containerBoundingRect.right) {
+            return 1;
+        } else {
+            return (
+            (xPosition - containerBoundingRect.left) / containerBoundingRect.width
+            );
+        }
+        });
     }
     const handleMouseDown = ()=>{
         window.onmousemove = handleMouseMove;
