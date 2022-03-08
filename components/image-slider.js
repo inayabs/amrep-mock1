@@ -37,8 +37,8 @@ const ImageSlider = ({file}) => {
 
     return ( 
         <div className="relative" ref={imageContainer} >
-                <img src={file.imgOne} alt="" className="object-cover pointer-events-none group-hover:opacity-75" />
-                <img src={file.imgTwo} alt="" className="object-cover pointer-events-none group-hover:opacity-75 absolute inset-0"  
+                <img src={file.imgOne} alt="" className="object-cover pointer-events-none group-hover:opacity-75 rounded-lg" />
+                <img src={file.imgTwo} alt="" className="object-cover pointer-events-none group-hover:opacity-75 absolute inset-0 rounded-lg"  
                 style={{clipPath: `polygon(0 0, ${imageRevealFraq * 100}% 0, ${imageRevealFraq * 100}% 100%, 0 100%)`}} 
                 />
 
