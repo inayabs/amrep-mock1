@@ -56,6 +56,11 @@ export const navLinks = {
             name: 'Packages',
             description: "See Packages",
             href: '/packages'
+        },
+        {
+            name: 'Free trial',
+            description: "See Packages",
+            href: '/free-trial'
         }
     ],
     user:{
